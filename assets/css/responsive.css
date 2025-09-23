@@ -471,7 +471,18 @@
 	.service-icon-tablecell i {
 	    font-size: 30px;
 	}
+@media (max-width: 768px) {
+  .subimg {
+    flex-direction: column; 
+    width: 100%; 
+    gap: 10px; 
+  }
 
+  .subimg img {
+    width: 100%;
+    height: auto;
+  }
+}
 	.main-menu {
 	    display: none;
 	}
