@@ -567,6 +567,12 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
 .breadcrumb-bg6 {
   background-image: url(../img/proj6-sub_1.jpg);
 }
+.bgabout {
+  background-image: url(../img/bgabout.jpg);
+}
+.bgcont{
+  background-image: url(../img/bgcont.jpg);
+}
 /* -----------------------------------------------------------------------------
 
 # Header Styles
