@@ -6,6 +6,37 @@ html {
   scroll-behavior: smooth;
 
 }
+.alert-box {
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.alert-box.success {
+    background-color: #02f74c;
+    color: #fff;
+}
+
+.alert-box.error {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.alert-box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -463,10 +494,11 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
 }
 
 .section-title p {
-  font-size: 15px;
+  font-size: 17px;
   width: 530px;
+  font-weight: 900;
   margin: 0 auto;
-  color: #555;
+  color: #020ef7;
   margin-top: 10px;
   line-height: 1.8;
 }
@@ -478,7 +510,7 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
 
 
 .breadcrumb-text p {
-  color: #027df7;
+  color: white;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 7px;
@@ -493,7 +525,7 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
 }
 
 .breadcrumb-section {
-  padding: 100px 0; 
+  padding: 100px 0;
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -511,9 +543,30 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
   content: "";
   background-color: #07212ecb;
   z-index: -1;
-  opacity: 0.8;
+  opacity: 0.6;
 }
-
+.titlesub{
+    font-size: large;
+    font-weight: 700;
+}
+.breadcrumb-bg1 {
+  background-image: url(../img/proj1-sub_1.jpg);
+}
+.breadcrumb-bg2 {
+  background-image: url(../img/indust.jpg);
+}
+.breadcrumb-bg3 {
+  background-image: url(../img/projja.jpg);
+}
+.breadcrumb-bg4 {
+  background-image: url(../img/pump.jpg);
+}
+.breadcrumb-bg5 {
+  background-image: url(../img/proj5-sub_3.jpg);
+}
+.breadcrumb-bg6 {
+  background-image: url(../img/proj6-sub_1.jpg);
+}
 /* -----------------------------------------------------------------------------
 
 # Header Styles
@@ -613,8 +666,8 @@ nav.main-menu > ul li:last-child {
   max-width: 80px;
 }
 .logoo{
-  max-height: 55px;
-  width: 50px;
+  max-height: 65px;
+  width: 55px;
   border-radius: 10px;
   background-color: #fff;
 }
@@ -854,7 +907,7 @@ a.mobile-show {
   align-items: center;
   box-shadow: 4px 4px 10px #0000001a;
   border-radius:20px 0 0  20px  ;
-  width:  100%; 
+  width:  100%;
   table-layout: 2px;
   border-color: #000;
   text-align: center;
@@ -863,7 +916,7 @@ a.mobile-show {
 
 .secound_part2 td{
   font-size: 20px;
-  padding: 20px; 
+  padding: 20px;
   word-spacing: 5px;
   text-shadow: 1px 1px 1px;
   font-weight: 500;
@@ -1410,6 +1463,7 @@ a.mobile-show.search-bar-icon:hover {
 .logo{
   width: 200px;
   height: 250px;
+
 }
 .hero-text-tablecell {
   display: table-cell;
@@ -1630,24 +1684,25 @@ div.owl-controls, .owl-controls div {
 # projects Styles
 
 ----------------------------------------------------------------------------- */
+
 .section-1 {
-  background-image: url(../img/sections/section-1.jpg);
+  background-image: url(../img/proj1-sub_1.jpg);
 }
 
+
 .section-2 {
-  background-image: url(../img/sections/section-2.jpg);
+  background-image: url(../img/proj3-sub_1.jpg);
 }
 
 .section-3 {
-  background-image: url(../img/sections/section-3.jpg);
+  background-image: url(../img/proj2-sub_3.jpg);
 }
 
 .section-4 {
-  background-image: url(../img/sections/section-4.jpg);
+  background-image: url(../img/proj4-sub_1.jpg);
 }
-
 .section-5 {
-  background-image: url(../img/sections/section-5.jpg);
+  background-image: url(../img/proj5-sub_1.jpg);
 }
 
 .section-6 {
@@ -1713,8 +1768,38 @@ p.excerpt {
 
 .subimg{
   display: flex;
-  width: 380px;
+  width: 500px;
   gap: 20px;
+  margin-bottom: 20px;
+
+}
+.subimg2{
+  display: flex;
+  width: 500px;
+  height: 400px;
+  gap: 40px;
+  margin-bottom: 20px;
+
+}
+.subme {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 100%;
+}
+
+.subme ul {
+  flex: 1;
+  min-width: 250px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.subme img {
+  flex: 0 0 330px;
+  height: 350px;
+  margin-bottom: 20px;
+  object-fit: cover;
 }
 
 .pagination-wrap {
@@ -1873,16 +1958,16 @@ span.comment-date {
 .sidebar-section h4 {
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin:0 0 20px 20px;
 }
 
 .sidebar-section ul {
-  margin: 0;
-  list-style: georgian;
+  margin:0px ;
 }
 
 
 .sidebar-section ul li a {
+  font-weight: 600;
   color: #027df7;
   font-size: 20px;
 }
@@ -2132,13 +2217,55 @@ ul.social-link-team li a {
   line-height: 1.8;
 }
 
-.contact-form form p input[type=text], .contact-form form p input[type=tel], .contact-form form p input[type=email] {
+.contact-form form p input[type=text], .contact-form form p input[type=tel],.contact-form form p input[type=password], .contact-form form p input[type=email] {
   width: 49%;
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 3px;
 }
+    .contform {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+.contform h2{
+  color: #007bff;
+}
+    .loginform {
+      max-width: 400px;
+      width: 100%;
+    }
 
+    .loginform form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .loginform input[type="email"],
+    .loginform input[type="password"] {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+    }
+
+    .loginform input[type="submit"] {
+      padding: 15px 40px;
+      border: none;
+      background: #007bff;
+      color: #fff;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: 0.3s;
+      align-self: center; }
+
+    .loginform input[type="submit"]:hover {
+      background: #0056b3;
+    }
 .contact-form form p textarea {
   border: 1px solid #ddd;
   padding: 15px;
